@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excersie JS 7-8</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+    <body>
+        <div id="style">
+            <h1 class="text-center">BÀI TẬP JS BUỔI 7-8</h1>
+        <div class="container py-3">
+          <div class="header pt-0">
+            <h2>NHẬP MẢNG</h2>
+            <div class="input mt-3">
+                <input type="number" id="input__number" placeholder="Nhập số n" />
+                <button id="input__btn" class="bg-success">Thêm số</button>
+            </div>
+            <div class="input__result mt-4">
+                <p class="mb-2">Array hiện tại: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="item">
+                <h2>TỔNG SỐ DƯƠNG</h2>
+                <button id="sum_btn" class="bg-success">Tính Tổng</button>
+                <div class="sum__result mt-2">
+                <p class="mb-2">Tổng số dương: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>ĐẾM SỐ NGUYÊN DƯƠNG</h2>
+            <button id="count-positive_btn" class="bg-success">Đếm Số</button>
+            <div class="count-positive__result mt-2">
+                <p class="mb-2">Số dương: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>TÌM SỐ NHỎ NHẤT</h2>
+            <button id="min-number_btn" class="bg-success">Tìm Số</button>
+            <div class="min-number__result mt-2">
+                <p class="mb-2">Số nhỏ nhất: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>TÌM SỐ DƯƠNG NHỎ NHẤT</h2>
+            <button id="min-positive_btn" class="bg-success">Tìm Số</button>
+            <div class="min-positive__result mt-2">
+                <p class="mb-2">Số nguyên dương nhỏ nhất: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>TÌM SỐ CHẴN CUỐI CÙNG</h2>
+            <button id="last-even-number_btn" class="bg-success">Tìm Số</button>
+            <div class="last-even-number__result mt-2">
+                <p class="mb-2">Số chẵn cuối cùng: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>ĐỔI CHỖ</h2>
+            <div class="position-group mt-3">
+                <input type="number" id="first-position" placeholder="Nhập vị trí thứ nhất" />
+                <input type="number" id="second-position" placeholder="Nhập vị trí thứ hai" />
+            </div>
+                <button id="change-position_btn" class="mt-3 bg-success">Đổi Chỗ</button>
+                <div class="change-position__result mt-2">
+                <p class="mb-2">Array sau khi đổi vị trí: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>SẮP XẾP THEO THỨ TỰ TĂNG DẦN</h2>
+            <button id="sort_btn" class="bg-success">Sắp Xếp</button>
+            <div class="sort__result mt-2">
+                <p class="mb-2">Array sau khi sắp xếp: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>TÌM SỐ NGUYÊN TỐ ĐẦU TIÊN</h2>
+            <button id="prime_btn" class="bg-success">Tìm Số</button>
+            <div class="prime__result mt-2">
+                <p class="mb-2">Số nguyên tố đầu tiên: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h2>ĐẾM SỐ NGUYÊN</h2>
+            <div class="float__input mt-3">
+                <input type="number" class="form-control" id="float__number" placeholder="Nhập số n" />
+                <button id="float__btn" class="bg-success mt-3">Thêm số</button>
+            </div>
+            <div class="float-result mt-3">
+                <p class="mb-2">Array số thực: </p>
+                <p id="result"></p>
+            </div>
+            <button id="integer__btn" class="bg-success">Đếm số</button>
+            <div class="integer__result mt-3">
+                <p class="mb-2">Số nguyên: </p>
+                <p id="result"></p>
+            </div>
+        </div>
+    
+        <div class="item box-sh pb-0">
+            <h2>SO SÁNH SỐ DƯƠNG VÀ SỐ ÂM</h2>
+            <button id="compare_btn" class="bg-success">So Sánh</button>
+            <div class="compare__result mt-2">
+            <p class="mb-2">Kết Quả: </p>
+            <p id="result"></p>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
